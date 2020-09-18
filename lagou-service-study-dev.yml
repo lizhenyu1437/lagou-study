@@ -1,4 +1,29 @@
-server:
-  port: 9002
+spring: 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog_system?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+ 
+  mail:
+    host: smtp.qq.com
+    username: 1016227293@qq.com
+    password: uvcpfaeejpgxbdhe
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+    
 
-
+mail:
+  send:
+    from: 1016227293@qq.com
