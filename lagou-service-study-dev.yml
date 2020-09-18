@@ -12,9 +12,7 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
  
   mail:
-    host: smtp.qq.com
-    username: 1016227293@qq.com
-    password: uvcpfaeejpgxbdhe
+    host: smtp.qq.com   
     properties:
       mail:
         smtp:
